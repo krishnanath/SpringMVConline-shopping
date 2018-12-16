@@ -64,5 +64,16 @@ private static List<Category> categories = new ArrayList<>();
 		 
 		return categories;
 	}
+	@Override
+	public Category get(int id) {
+		
+		for(Category category : categories) {
+			if(category.getId() == id) return category;
+		}
+		
+		return null;
+		
+		
+	}
 
 }
