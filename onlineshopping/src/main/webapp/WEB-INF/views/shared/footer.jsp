@@ -1,13 +1,14 @@
- <!-- Footer -->
-  
- <div class="footer">
-  <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
-      </div>
-      <!-- /.container -->
-    </footer>
-    
- 
- </div>
-    
+ <div class="container footer">
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Online Shopping 2018 - Designed and Developed By Krishnanath Maly</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>

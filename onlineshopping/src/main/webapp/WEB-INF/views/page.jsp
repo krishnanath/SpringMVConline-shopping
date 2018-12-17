@@ -17,8 +17,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Online Shopping Website Using Spring MVC and Hibernate">
-<meta name="author" content="Krishnanath Maly">
- 
+<meta name="author" content="Khozema Nullwala">
+<meta name="_csrf" content="${_csrf.token}">
+<meta name="_csrf_header" content="${_csrf.headerName}">
 
 <title>Online Shopping - ${title}</title>
 
@@ -84,13 +85,31 @@
 				<%@include file="listProducts.jsp"%>
 			</c:if>	
 			
-		  
+			
+			
+		<%-- 	
+			<!-- Load only when user clicks show product -->
+			<c:if test="${userClickShowProduct == true}">
+				<%@include file="singleProduct.jsp"%>
+			</c:if>								
 
+			<!-- Load only when user clicks manage product -->
+			<c:if test="${userClickManageProduct == true}">
+				<%@include file="manageProduct.jsp"%>
+			</c:if>	
+
+			<!-- Load only when user clicks manage product -->
+			<c:if test="${userClickShowCart == true}">
+				<%@include file="cart.jsp"%>
+			</c:if>	
+ --%>
+ 
+ 
 		</div>
 
 
 		<!-- Footer comes here -->
-		<%@include file="./shared/footer.jsp"%>
+		<%-- <%@include file="./shared/footer.jsp"%> --%>
 
 		<!-- jQuery -->
 		<script src="${js}/jquery.js"></script>
